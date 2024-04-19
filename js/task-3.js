@@ -1,12 +1,12 @@
 console.log("task-3");
 function filterArray(numbers, value) {
-  let arrNew = [];
-  for (let num of numbers) {
-    if (num > value) {
-      arrNew.push(num);
+  let filteredArray = [];
+  for (let number of numbers) {
+    if (number > value) {
+      filteredArray.push(number);
     }
   }
-  return arrNew;
+  return filteredArray;
 }
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
 console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
